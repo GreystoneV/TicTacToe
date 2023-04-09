@@ -1,0 +1,43 @@
+/* This container includes table and canvas */
+.center-container {
+    /* Sets width of container */
+    width: 600;
+    /* Centers container */
+    margin: 0 auto;
+    /* 50px down from top */
+    margin-top: 50px;
+}
+
+table {
+    /* Collapses table into 1 border */
+    border-collapse: collapse;
+    /* Hides outer borders */
+    border-style: hidden;
+}
+
+td {
+    /* Changes cursor to index finger when over td ele */
+    cursor: pointer;
+    /* Sets border style */
+    border: 4px solid #5F9EA0;
+    /* Removes default padding */
+    padding: 0%;
+    width: 200px;
+    height: 200px;
+    filter: contrast(3);
+}
+
+canvas {
+    /* Sets position of canvas to top left of container */
+    position: absolute;
+    /* Places our canvas over the table */
+    z-index: 10;
+    /* Makes vanvas invisible */
+    pointer-events: none;
+}
+
+h1 {
+    margin-left: 60px;
+    /*This technically isn't 'centered' but it looks better over the game 
+    than in the center of the page. I could align it to the page with text-align: center; */
+}
